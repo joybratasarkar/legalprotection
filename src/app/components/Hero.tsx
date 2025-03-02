@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Hero() {
     return (
         <section
@@ -22,12 +24,12 @@ export default function Hero() {
                 </p>
 
                 {/* Call to Action Button */}
-                <a 
+                <Link 
                     href="/contact" 
                     className="bg-primary-light text-white px-8 py-3 rounded-full shadow-lg hover:bg-primary-dark transition duration-300 transform hover:scale-105"
                 >
                     Get Consultation
-                </a>
+                </Link>
             </div>
         </section>
     );

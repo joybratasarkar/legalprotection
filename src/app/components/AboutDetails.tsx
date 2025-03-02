@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutDetails() {
   return (
     <section className="py-20 px-4 md:px-20 bg-gray-50">
@@ -5,9 +7,11 @@ export default function AboutDetails() {
         
         {/* Left Column: Image with Larger Size */}
         <div className="relative overflow-hidden rounded-lg shadow-xl">
-          <img 
+          <Image 
             src="/pexels-august-de-richelieu-4427430.jpg" 
             alt="Professional Legal Team" 
+            width={800} 
+            height={500} 
             className="w-full h-[500px] object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-20 rounded-lg"></div>
@@ -37,9 +41,11 @@ export default function AboutDetails() {
 
           {/* Signature */}
           <div className="mt-8">
-            <img 
+            <Image 
               src="/icons/iconLegal.png" 
               alt="Signature" 
+              width={160} 
+              height={50} 
               className="w-40 mb-2"
             />
             <p className="text-gray-800 font-semibold">Akashdeep</p>

@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
+
 const legalPractices = [
     {
         title: "Corporate & Securities",
@@ -57,9 +60,11 @@ export default function LegalPractices() {
                             className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6 text-center"
                         >
                             <div className="mb-4">
-                                <img 
-                                    src={`${practice.icon}`} 
+                                <Image 
+                                    src={practice.icon} 
                                     alt={practice.title} 
+                                    width={64} 
+                                    height={64} 
                                     className="w-16 h-16 mx-auto text-primary-light" 
                                 />
                             </div>
@@ -69,12 +74,16 @@ export default function LegalPractices() {
                             <p className="text-gray-600 mb-4">
                                 {practice.description}
                             </p>
-                            <a 
-                                href={practice.link} 
-                                className="text-primary-light font-semibold hover:text-primary-dark transition duration-300"
-                            >
-                                LEARN MORE →
-                            </a>
+                            {practice.link ? (
+                                <Link 
+                                    href={practice.link} 
+                                    className="text-primary-light font-semibold hover:text-primary-dark transition duration-300"
+                                >
+                                    LEARN MORE →
+                                </Link>
+                            ) : (
+                                <span className="text-gray-400 cursor-not-allowed">LEARN MORE →</span>
+                            )}
                         </div>
                     ))}
                 </div>

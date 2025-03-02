@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function PhilosophySection() {
     return (
         <section className="bg-primary-dark text-white py-20">
@@ -14,9 +16,11 @@ export default function PhilosophySection() {
                     
                     {/* Our Philosophy */}
                     <div className="bg-primary-dark rounded-lg shadow-lg p-10 text-center transition transform hover:scale-105 hover:shadow-2xl">
-                        <img
+                        <Image
                             src="/icons/philosophy.svg"
                             alt="Our Philosophy"
+                            width={64} 
+                            height={64}
                             className="mx-auto w-16 h-16 mb-4 text-gold-light"
                         />
                         <h3 className="text-2xl font-semibold mb-2 text-gold">
@@ -29,9 +33,11 @@ export default function PhilosophySection() {
 
                     {/* Our Principle */}
                     <div className="bg-primary-dark rounded-lg shadow-lg p-10 text-center transition transform hover:scale-105 hover:shadow-2xl">
-                        <img
+                        <Image
                             src="/icons/principle.svg"
                             alt="Our Principle"
+                            width={64} 
+                            height={64}
                             className="mx-auto w-16 h-16 mb-4 text-gold-light"
                         />
                         <h3 className="text-2xl font-semibold mb-2 text-gold">
@@ -44,9 +50,11 @@ export default function PhilosophySection() {
 
                     {/* Key of Success */}
                     <div className="bg-primary-dark rounded-lg shadow-lg p-10 text-center transition transform hover:scale-105 hover:shadow-2xl">
-                        <img
+                        <Image
                             src="/icons/success.svg"
                             alt="Key of Success"
+                            width={64} 
+                            height={64}
                             className="mx-auto w-16 h-16 mb-4 text-gold-light"
                         />
                         <h3 className="text-2xl font-semibold mb-2 text-gold">
