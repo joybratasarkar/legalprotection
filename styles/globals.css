@@ -1,6 +1,22 @@
+/* src/styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #1e293b;
+}
+
+:root {
+  --background: #f8fafc;
+  --foreground: #1e293b;
+}
+
+:root {
+  --background: #f8fafc;
+  --foreground: #1e293b;
+}
 
 :root {
   --background: #ffffff;
